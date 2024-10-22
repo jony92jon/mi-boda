@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: crimson;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.caja {
+  width: 100%;
+  background-color: rgb(163, 130, 88);
+  margin: 10px 0;
+  border: 4px solid forestgreen;
+  display: none;
+}
+
+/* Media Queries */
+/* Teléfono */
+@media (max-width: 500px) {
+  body {
+    background-color: blueviolet;
+  }
+
+  #telefono {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media (min-width: 501px) and (max-width: 768px) {
+  body {
+    background-color: darkgreen;
+  }
+
+  #tablet {
+    display: block;
+  }
+}
+
+/* Estandar */
+@media (min-width: 769px) and (max-width: 1200px) {
+  body {
+    background-color: darkgoldenrod;
+  }
+
+  #estandar {
+    display: block;
+  }
+}
+
+/* Pantalla-ancha */
+@media (min-width: 1201px) {
+  body {
+    background-color: darkcyan;
+  }
+
+  #pantalla-ancha {
+    display: block;
+  }
+}
+
+/* Paisaje */
+@media (max-height: 500px) {
+  body {
+    background-color: blue;
+  }
+
+  #paisaje {
+    display: block;
+  }
+}

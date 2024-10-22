@@ -1,0 +1,68 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.box {
+  max-width: 95%;
+  margin: auto;
+}
+
+h2 {
+  margin: 0;
+  padding: 50px 0 10px 0;
+}
+
+p {
+  text-align: center;
+}
+
+/* Agrega una animación de desplazamiento suave */
+/* La propiedad scroll-behavior se utiliza para controlar el comportamiento del desplazamiento (scroll) en una página web. En este caso, se establece en smooth, lo que significa que el desplazamiento se realizará de manera suave en lugar de un desplazamiento brusco. */
+html {
+  scroll-behavior: smooth;
+}

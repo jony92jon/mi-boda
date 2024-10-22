@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compatibilidad entre Navegadores</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+
+      /* La necesidad de usar prefijos de proveedores ha disminuido en gran medida debido a la mejora en la compatibilidad entre navegadores y a la adopción de estándares. Sin embargo, aún puedes encontrar prefijos en algunas propiedades CSS para garantizar que funcionen correctamente en varios navegadores. */
+
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: brown;
+        border-radius: 20px;
+        -webkit-border-radius: 20px; /* Prefijo para WebKit (Chrome, Safari) */
+        -moz-border-radius: 20px; /* Prefijo para Mozilla (Firefox) */
+        -ms-border-radius: 20px; /* Prefijo para Microsoft (Internet Explorer) */
+        box-shadow: 5px 5px 10px #888888; /* Estándar */
+        -webkit-box-shadow: 5px 5px 10px #888888; /* Prefijo para WebKit (Chrome, Safari) */
+        -moz-box-shadow: 5px 5px 10px #888888; /* Prefijo para Mozilla (Firefox) */
+        -ms-box-shadow: 5px 5px 10px #888888; /* Prefijo para Microsoft (Internet Explorer) */
+        display: flex; /* Estándar */
+        -webkit-display: flex; /* Prefijo para WebKit (Chrome, Safari) */
+        -moz-display: flex; /* Prefijo para Mozilla (Firefox) */
+        -ms-display: flex; /* Prefijo para Microsoft (Internet Explorer) */
+        transition: width 1s; /* Estándar */
+        -webkit-transition: width 1s; /* Prefijo para WebKit (Chrome, Safari) */
+        -moz-transition: width 1s; /* Prefijo para Mozilla (Firefox) */
+        -ms-transition: width 1s; /* Prefijo para Microsoft (Internet Explorer) */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

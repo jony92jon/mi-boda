@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables CSS</title>
+  <style>
+
+      /* Variables */
+      /* ¡Entendido! Las variables en CSS, también conocidas como variables personalizadas o variables CSS, son contenedores de información que puedes usar para almacenar y reutilizar valores específicos en tus hojas de estilo. Estas variables están definidas por el usuario y se indican con el prefijo "--". Pueden almacenar valores como colores, tamaños, márgenes, entre otros. */
+      :root{
+        --container-max: 720px;
+        --header-bg-color: purple;
+        --header-text-color: white;
+        --header-text-align: center;
+        --box-bg-color: rgb(243, 109, 14);
+        --box-text-color: #ffffff;
+        --box-border-color: brown;
+        /* Espaciados */
+        --spacing-sm:8px;
+        --spacing-md:16px;
+        --spacing-lg:32px;
+        --spacing-xl:64px;
+        --spacing-sxl:128px
+      }
+
+      body{
+        background-color: rgb(226, 226, 226);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .container{
+        max-width: var(--container-max);
+      }
+
+      .box{
+        background-color: var(--box-bg-color);
+        color: var(--box-text-color);
+        border: 2px solid var(--box-border-color);
+        margin: 10px 0;
+        padding: var(--spacing-lg) var(--spacing-md);
+      }
+
+      header{   
+        max-width: var(--container-max);     
+        background-color: var(--header-bg-color);   
+        text-align: var(--header-text-align);
+        color: var(--header-text-color);
+      }
+
+      .box-1{
+        --box1-bg: green;
+        background-color: var(--box1-bg);
+      }
+
+      /* Variables CSS para media queries */
+     /*  @media(max-width: 540px){
+        :root{
+        --container-max: 300px;
+        --header-bg-color: rgb(0, 0, 0);      
+        }
+      } */
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Variables CSS (Custom Properties)</h1>
+  </header>
+  <div class="container">
+    <div class="box box-1">
+      <h2>Lorem ipsum dolor sit.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, quidem?</p>
+    </div>
+    <div class="box box-2">
+      <h2>Lorem ipsum dolor sit.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, quidem?</p>
+    </div>
+    <div class="box box-3">
+      <h2>Lorem ipsum dolor sit.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, quidem?</p>
+    </div>
+  </div>
+</body>
+</html>

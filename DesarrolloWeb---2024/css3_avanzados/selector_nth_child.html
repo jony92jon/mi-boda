@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nth-child</title>
+  <style>
+    li{
+      padding: 0.25rem;
+      margin: 0.25rem;
+      list-style: none;
+      font-size: 1.2rem;
+    }
+
+    /* first child */
+    li:first-child{
+      background-color: blueviolet;
+    }
+
+    /* last-child */
+    li:last-child{
+      background-color: brown;
+    }
+
+    /* Posición 5 */
+    li:nth-child(5){
+      background-color: bisque;
+    }
+
+    /* Cada intervalo */
+    li:nth-child(3n + 5){
+      background-color: darkcyan;
+    }
+
+    /* Cada impar */
+    li:nth-child(odd){
+      background-color: chocolate;
+    }
+
+    /* Cada par */
+    li:nth-child(even){
+      background-color: darkorchid;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+    <li>Item6</li>
+    <li>Item7</li>
+    <li>Item8</li>
+    <li>Item9</li>
+    <li>Item10</li>
+    <li>Item11</li>
+    <li>Item12</li>
+    <li>Item13</li>
+    <li>Item14</li>
+    <li>Item15</li>
+    <li>Item16</li>
+    <li>Item17</li>
+    <li>Item18</li>
+    <li>Item19</li>
+    <li>Item20</li>
+    <li>Item21</li>
+    <li>Item22</li>
+    <li>Item23</li>
+    <li>Item24</li>
+  </ul>
+</body>
+</html>

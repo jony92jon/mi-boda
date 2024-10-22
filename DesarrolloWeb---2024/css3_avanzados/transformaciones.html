@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformaciones</title>
+  <style>
+    body{
+      background-color: gray;
+      margin: 20px;
+    } 
+
+    /* Las transformaciones en CSS permiten modificar la apariencia de un elemento aplicando cambios en su posición, rotación, escala y más. Aquí tienes una introducción a algunas de las transformaciones más comunes: */
+    .box{
+      background-color: white;
+      width: 300px;
+      height: 300px;
+     /*  transform: rotate(25deg); */
+     /*  transform: scale(2); */
+     /*  transform: skew(25deg); */
+     transform: rotate(0);
+     transition: all 1s ease-in-out;
+    }
+
+    .box:hover{
+      /* transform: translate(50px, 100px); */
+      /* transform: skew(16deg); */
+     /*  transform: translate3d(100px, 80px, 90px);
+      transform: skew(20deg, 20deg); */
+      /* transform: translate(50px, 50px) rotate(45deg) scale(1.6) skew(30deg, 20deg); */
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
