@@ -67,12 +67,12 @@ img {
 
 /*Programa*/
 .icono__ceremonia {
-  background-image: url(../img/anillos-de-boda.png);
+  background-image: url(../img/wedding-rings-wedding-svgrepo-com.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 10rem;
-  width: 10rem;
+  height: 12rem;
+  width: 12rem;
   margin-top: 2rem;
 }
 
@@ -203,6 +203,17 @@ img {
   font-weight: bold;
 }
 
+.direccion__imagen {
+  background-image: url(../img/fachada-de-el-caseron.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 14rem;
+  width: 26rem;
+  border-radius: 2.5rem;
+  margin-top: 1.4rem;
+}
+
 .programa__itinerario .direccion p {
   margin: 0;
   padding: 0;
@@ -226,4 +237,53 @@ img {
 .programa__itinerario .direccion a:hover {
   background-color: #bfa880;
   color: var(--blanco);
+}
+
+/*Sección Programa Fiesta*/
+.icono__fiesta {
+  background-image: url(../img/papel-picado.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 10rem;
+  width: 10rem;
+  margin-top: 6rem;
+}
+
+.margin {
+  margin-top: 6rem;
+  border-bottom: 1px solid rgb(202, 201, 201);
+}
+
+.border {
+  margin-bottom: 6rem;
+}
+
+/*Sección Regalos*/
+.regalos__info {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.regalos__info h3 {
+  font-family: var(--fuente-secundaria);
+  font-size: 3rem;
+  font-family: var(--fuente-secundaria);
+}
+
+.regalos__info p {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: var(--fuente-secundaria);
+}
+
+.regalos__info p:nth-last-child(2) {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.regalos__info span {
+  font-size: 1.9rem;
+  font-family: var(--fuente-secundaria);
 }
