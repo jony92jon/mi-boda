@@ -20,6 +20,9 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 2;
+  margin: 0;
+  padding: 0;
+  background-color: #fcf6f1;
 }
 
 /*Globales*/
@@ -32,35 +35,14 @@ img {
   max-width: 100%;
 }
 
-/*Utilidades*/
-.no-margin {
-  margin: 0;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-body {
-  background-color: #f7f2eb;
-}
-
 /*Header*/
 .header {
-  background-image: url(../img/Principal.jpg);
-  height: 60rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/Principal.jpg);
+  height: 100rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: rgba(0, 11, 21, 0.2);
-  position: relative;
-}
-
-.header__principal {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
 }
 
 .header__texto {
@@ -83,292 +65,165 @@ body {
   transition: all 2s ease-in-out;
 }
 
-/*Sección 1*/
-.seccion1 {
-  text-align: center;
-}
-
-.seccion1 p {
-  font-family: var(--fuente-secundaria);
-  font-size: 2rem;
-  padding-top: 2rem;
-}
-
-.seccion1 h3 {
-  font-family: var(--fuente-secundaria);
-  font-size: 2rem;
-  padding-bottom: 2rem;
-}
-
-/*Sección 2*/
-.seccion2 {
-  background: rgb(215, 193, 166);
-  background: radial-gradient(
-    circle,
-    rgba(215, 193, 166, 0.850577731092437) 0%,
-    rgba(201, 188, 160, 0.9150035014005602) 97%,
-    rgba(206, 195, 172, 0.8589810924369747) 100%
-  );
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-}
-
-.seccion2 .fecha h3 {
-  font-size: 2rem;
-  font-family: var(--fuente-secundaria);
-  color: #545453;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-.seccion2 .fecha h4 {
-  font-family: var(--fuente-secundaria);
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 3rem;
-}
-
-.seccion2 .lugar h3 {
-  font-size: 2rem;
-  font-family: var(--fuente-secundaria);
-  color: #575756;
-  font-weight: bold;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-.seccion2 .lugar h4 {
-  font-family: var(--fuente-secundaria);
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-}
-
-/*Sección 3*/
-.seccion3 .imagen {
-  background-image: url(../img/fachada-de-el-caseron.jpg);
-  background-size: cover;
+/*Programa*/
+.icono__ceremonia {
+  background-image: url(../img/anillos-de-boda.png);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center center;
-  height: 22rem;
-  max-width: 100%;
-  margin-top: 3rem;
-  border-radius: 5%;
-}
-
-.seccion3 h3 {
-  font-family: var(--fuente-secundaria);
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
+  height: 10rem;
+  width: 10rem;
   margin-top: 2rem;
-  text-align: center;
 }
 
-.seccion3 .seccion3__texto h4 {
-  font-family: var(--fuente-secundaria);
+.programa__itinerario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.programa__itinerario .etiqueta__caja {
+  width: 20rem;
+  height: 6rem;
+  text-align: center;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  background-color: #575756;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.programa__itinerario .etiqueta__caja h3 {
+  color: var(--blanco);
+  text-transform: uppercase;
   font-size: 2rem;
-  font-weight: normal;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+  font-family: var(--fuente-secundaria);
 }
 
-.seccion3 .seccion3__texto p {
-  font-family: var(--fuente-secundaria);
-  font-size: 2rem;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 2.2rem;
+.programa__itinerario .fecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.seccion3 .seccion3__texto .boton {
-  display: block;
+.programa__itinerario .fecha h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  color: #575756;
+  margin-top: 1.8rem;
   font-family: var(--fuente-secundaria);
-  text-align: center;
-  padding: 1rem 3rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  border: none;
+  font-weight: bold;
+}
+
+.programa__itinerario .fecha p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  margin-top: 0.2rem;
+  color: gray;
+  font-family: var(--fuente-secundaria);
+}
+
+.programa__itinerario .fecha a {
   text-decoration: none;
-  background-color: #8c7a63;
-  color: var(--negro);
-}
-
-.seccion3 .seccion3__texto .boton:hover {
-  background-color: #d0be9f;
-}
-
-/*Sección 4*/
-.seccion4 h3 {
+  color: #bfa880;
+  background-color: var(--blanco);
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
   font-family: var(--fuente-secundaria);
-  font-size: 4rem;
-  text-align: center;
-  color: #0e6655;
 }
 
-/*Sección5*/
-.seccion5 {
-  background: rgb(215, 193, 166);
-  background: radial-gradient(
-    circle,
-    rgba(215, 193, 166, 0.850577731092437) 0%,
-    rgba(201, 188, 160, 0.9150035014005602) 97%,
-    rgba(206, 195, 172, 0.8589810924369747) 100%
-  );
-  text-align: center;
-  padding-top: 3rem;
+.programa__itinerario .fecha a:hover {
+  background-color: #bfa880;
+  color: var(--blanco);
 }
 
-.seccion5 .primero h4,
-.seccion5 .segundo h4,
-.seccion5 .tercero h4,
-.seccion5 .cuarto h4 {
+.programa__itinerario .lugar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.programa__itinerario .lugar h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  color: #575756;
+  margin-top: 2rem;
   font-family: var(--fuente-secundaria);
-  font-weight: normal;
+  font-weight: bold;
+}
+
+.programa__itinerario .lugar p {
+  margin: 0;
+  padding: 0;
   font-size: 1.8rem;
-  padding: 0;
+  margin-top: 0.3rem;
+  color: gray;
+  font-family: var(--fuente-secundaria);
+}
+
+.programa__itinerario .lugar a {
+  text-decoration: none;
+  color: #bfa880;
+  background-color: var(--blanco);
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-family: var(--fuente-secundaria);
+}
+
+.programa__itinerario .lugar a:hover {
+  background-color: #bfa880;
+  color: var(--blanco);
+}
+
+.programa__itinerario .direccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.programa__itinerario .direccion h6 {
   margin: 0;
-}
-
-.seccion5 .primero p,
-.seccion5 .segundo p,
-.seccion5 .tercero p,
-.seccion5 .cuarto p {
-  font-family: var(--fuente-secundaria);
-  font-weight: bold;
-  font-size: 3rem;
   padding: 0;
+  font-size: 2.5rem;
+  color: #575756;
+  margin-top: 2rem;
+  font-family: var(--fuente-secundaria);
+  font-weight: bold;
+}
+
+.programa__itinerario .direccion p {
   margin: 0;
-}
-
-.seccion5 .primero p,
-.seccion5 .segundo p,
-.seccion5 .tercero p {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #f7f6f4;
-}
-
-.seccion5 .cuarto p {
-  padding-bottom: 3rem;
-}
-
-/*Sección 6*/
-.seccion6 {
-  text-align: center;
-}
-
-.borde {
-  border-bottom: 1px solid gray;
-  padding-bottom: 2rem;
-}
-
-.seccion6 h3 {
+  padding: 0;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+  color: gray;
   font-family: var(--fuente-secundaria);
-  font-size: 4rem;
-  text-align: center;
-  color: #0e6655;
 }
 
-.seccion6 p {
+.programa__itinerario .direccion a {
+  text-decoration: none;
+  color: #bfa880;
+  background-color: var(--blanco);
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
   font-family: var(--fuente-secundaria);
-  font-size: 2rem;
 }
 
-.seccion6 span {
-  font-size: 2rem;
-  font-family: var(--fuente-secundaria);
-  font-weight: bold;
-  padding-top: 1.5rem;
-}
-
-/*Sección 7*/
-.seccion7 {
-  text-align: center;
-}
-
-.seccion7 h3 {
-  font-family: var(--fuente-secundaria);
-  font-size: 4rem;
-  text-align: center;
-  color: #0e6655;
-}
-
-.seccion7 p {
-  font-family: var(--fuente-secundaria);
-  font-size: 2rem;
-  text-align: center;
-}
-
-.seccion7 span {
-  font-size: 2rem;
-  font-family: var(--fuente-secundaria);
-  font-weight: bold;
-  padding-bottom: 2rem;
-  padding-top: 1.5rem;
-  text-align: center;
-}
-
-/*Footer*/
-.footer {
-  text-align: center;
-}
-
-.footer h4 {
-  font-family: var(--fuente-secundaria);
-  font-weight: normal;
-}
-
-/*Media Queries*/
-@media (min-width: 768px) {
-  .seccion2 .forma {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-  }
-
-  .seccion3 .forma2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
-  }
-
-  .seccion3 .forma2 .imagen {
-    height: auto;
-  }
-
-  .seccion3 .forma2 .boton {
-    width: 50%;
-  }
-
-  .seccion3__texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .seccion5 .forma3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .seccion5 .primero p,
-  .seccion5 .segundo p,
-  .seccion5 .tercero p {
-    border-bottom: none;
-  }
-}
-
-@media (min-width: 980px) {
-  .seccion5 .forma3 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
-  }
+.programa__itinerario .direccion a:hover {
+  background-color: #bfa880;
+  color: var(--blanco);
 }
