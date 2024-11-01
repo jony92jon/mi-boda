@@ -39,7 +39,7 @@ img {
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../img/Principal.jpg);
-  height: 100rem;
+  height: 90rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -241,17 +241,17 @@ img {
 
 /*Sección Programa Fiesta*/
 .icono__fiesta {
-  background-image: url(../img/papel-picado.png);
+  background-image: url(../img/wired-outline-1103-confetti-hover-pinch.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 10rem;
-  width: 10rem;
-  margin-top: 6rem;
+  height: 14rem;
+  width: 14rem;
+  margin-top: 4rem;
 }
 
 .margin {
-  margin-top: 6rem;
+  margin-top: 4rem;
   border-bottom: 1px solid rgb(202, 201, 201);
 }
 
