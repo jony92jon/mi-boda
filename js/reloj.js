@@ -5,7 +5,7 @@ const secondsEl = document.getElementById("seconds");
 
 document.addEventListener("DOMContentLoaded", startTimer);
 
-const marriedDate = new Date("31 May 2024");
+const marriedDate = new Date("31 May 2025");
 
 let timerInterval;
 
