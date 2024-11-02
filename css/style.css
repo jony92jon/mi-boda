@@ -25,6 +25,16 @@ body {
   background-color: #fcf6f1;
 }
 
+h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /*Globales*/
 .contenedor {
   width: min(90%, 120rem);
@@ -35,6 +45,8 @@ img {
   max-width: 100%;
 }
 
+
+
 /*Header*/
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -43,6 +55,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
 }
 
 .header__texto {
@@ -67,12 +80,26 @@ img {
 
 /* Reloj */
 
-.reloj__contenedor {
-  border: 1px solid red;
+.reloj__contenedor__aros {
+  width: 45vw;
+  height: 45vh;
+  background: url(../img/img_circuloContador01.svg) center center no-repeat;
+  position: absolute;
+  bottom: -20rem;
+  left: 50%; 
+  transform: translateX(-50%);
   display: flex;
-  min-height: 35vh;
-  max-width: 35vw;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.reloj__contenedor {
+  border: 1px solid rgb(6, 5, 5);
+  width: 30vw;
+  height: 30vh;
+  display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-color: white;
   border-radius: 50%;
@@ -83,8 +110,16 @@ img {
   padding-top: 25px;
 }
 
+.reloj__contenedor__contenido {
+  width: 90%;
+}
+
 .reloj__titulo {
   text-align: center;
+  font-size: 40px;
+  color: #957A51;
+  font-weight: bold;
+  font-family: var(--fuente-secundaria);
 }
 
 .reloj {
@@ -102,8 +137,27 @@ img {
   justify-content: center;
   align-items: center;
   border-right: 1px solid #ccc;
-  padding-right: 10px;
+  font-weight: bold;
+  font-family: var(--fuente-secundaria);
+  padding-right: 2px;
 }
+
+.reloj__col .numero {
+  color: #575756;
+  font-weight: bold;
+}
+
+.reloj__col .time__name {
+  color: #957A51;
+  font-weight: bold;
+}
+
+
+
+
+/* Fin Reloj */
+
+
 
 /*Programa*/
 .icono__ceremonia {
@@ -121,7 +175,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 22rem;
 }
 .programa__itinerario .etiqueta__caja {
   width: 20rem;
@@ -326,4 +380,10 @@ img {
 .regalos__info span {
   font-size: 1.9rem;
   font-family: var(--fuente-secundaria);
+}
+
+
+/* utilidades */
+.no__border {
+  border: none !important;
 }
