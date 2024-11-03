@@ -95,8 +95,8 @@ img {
 
 .reloj__contenedor {
   border: 1px solid rgb(6, 5, 5);
-  width: 30vw;
-  height: 30vh;
+  width: 21vw;
+  height: 31vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +116,7 @@ img {
 
 .reloj__titulo {
   text-align: center;
-  font-size: 40px;
+  font-size: 3rem;
   color: #957A51;
   font-weight: bold;
   font-family: var(--fuente-secundaria);
@@ -153,6 +153,33 @@ img {
 }
 
 
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .reloj__contenedor__aros {
+    width: 74vw;
+    height: 63vh;
+  }
+
+  .reloj__contenedor {
+    width: 40vw;
+    height: 40vh;
+    margin-top: 48px;
+  }
+}
+
+
+/* Extra small screens (portrait phones) */
+@media (max-width: 480px) {
+  .reloj__contenedor__aros {
+    width: 98vw;
+    height: 45vh; 
+  }
+
+  .reloj__contenedor {
+    width: auto;
+    height: auto;
+  }
+}
 
 
 /* Fin Reloj */
