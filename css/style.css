@@ -25,7 +25,8 @@ body {
   background-color: #fcf6f1;
 }
 
-h2, h3 {
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -44,8 +45,6 @@ p {
 img {
   max-width: 100%;
 }
-
-
 
 /*Header*/
 .header {
@@ -86,11 +85,11 @@ img {
   background: url(../img/img_circuloContador01.svg) center center no-repeat;
   position: absolute;
   bottom: -20rem;
-  left: 50%; 
+  left: 50%;
   transform: translateX(-50%);
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .reloj__contenedor {
@@ -103,9 +102,9 @@ img {
   flex-direction: column;
   background-color: white;
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.40);
-  -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.40);
-  box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.40);
+  -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.4);
   padding: 20px;
   padding-top: 25px;
 }
@@ -117,7 +116,7 @@ img {
 .reloj__titulo {
   text-align: center;
   font-size: 3rem;
-  color: #957A51;
+  color: #957a51;
   font-weight: bold;
   font-family: var(--fuente-secundaria);
 }
@@ -148,10 +147,9 @@ img {
 }
 
 .reloj__col .time__name {
-  color: #957A51;
+  color: #957a51;
   font-weight: bold;
 }
-
 
 /* Medium screens (tablets) */
 @media (max-width: 1024px) {
@@ -167,12 +165,11 @@ img {
   }
 }
 
-
 /* Extra small screens (portrait phones) */
 @media (max-width: 480px) {
   .reloj__contenedor__aros {
     width: 98vw;
-    height: 45vh; 
+    height: 45vh;
   }
 
   .reloj__contenedor {
@@ -181,20 +178,10 @@ img {
   }
 }
 
-
 /* Fin Reloj */
-
-
 
 /*Programa*/
 .icono__ceremonia {
-  background-image: url(../img/wedding-rings-wedding-svgrepo-com.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 12rem;
-  width: 12rem;
-  margin-top: 2rem;
 }
 
 .programa__itinerario {
@@ -202,7 +189,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 22rem;
+  margin-top: 26rem;
 }
 .programa__itinerario .etiqueta__caja {
   width: 20rem;
@@ -324,17 +311,6 @@ img {
   font-weight: bold;
 }
 
-.direccion__imagen {
-  background-image: url(../img/fachada-de-el-caseron.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 14rem;
-  width: 26rem;
-  border-radius: 2.5rem;
-  margin-top: 1.4rem;
-}
-
 .programa__itinerario .direccion p {
   margin: 0;
   padding: 0;
@@ -408,7 +384,6 @@ img {
   font-size: 1.9rem;
   font-family: var(--fuente-secundaria);
 }
-
 
 /* utilidades */
 .no__border {
