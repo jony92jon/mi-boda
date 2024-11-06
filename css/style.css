@@ -317,6 +317,7 @@ img {
   font-size: 1.8rem;
   margin-top: 0.3rem;
   color: gray;
+  text-align: center;
   font-family: var(--fuente-secundaria);
 }
 
@@ -395,7 +396,7 @@ img {
 }
 
 .bg {
-  background-color: #e9f7ef;
+  background-color: #f1f9f5;
   padding: 3rem 0;
 }
 
@@ -403,8 +404,16 @@ img {
   margin-top: 4rem;
   font-size: 4rem;
   text-align: center;
-
   font-family: var(--fuente-secundaria);
+}
+
+.imagen__galeria {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.carousel {
+  margin-top: -3rem;
 }
 
 .carousel .carousel-item {
