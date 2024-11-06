@@ -10,3 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
         noWrap: false
     })
 });
+
+const play = document. 
+getElementById('play');
+
+const audio = new Audio();
+audio.src = "../audio/carlos_vives.mp3"
+
+play.addEventListener
+('click', function(){
+    if(audio.paused){
+        audio.play()
+        
+    }else {
+        audio.pause()
+        
+    }
+})
+
+
+       

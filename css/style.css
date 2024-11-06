@@ -23,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fcf6f1;
+  position: relative;
 }
 
 h2,
@@ -47,6 +48,26 @@ img {
 }
 
 /*Header*/
+button {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #bfa880;
+  padding: 2rem;
+  position: absolute;
+  z-index: 500;
+  top: 12px;
+  right: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #dddcda;
+}
+
+button .icono__musica {
+  color: #bfa880;
+}
+
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../img/Principal.jpg);
@@ -64,6 +85,7 @@ img {
 
 .header__texto h2 {
   font-size: 8rem;
+  margin-top: 5rem;
   color: var(--blanco);
   font-weight: bold;
   font-family: var(--fuente-principal);
@@ -75,6 +97,7 @@ img {
   font-size: 3.5rem;
   transform: rotate(0);
   transition: all 2s ease-in-out;
+  margin-top: 7rem;
 }
 
 /* Reloj */
