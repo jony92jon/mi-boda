@@ -36,7 +36,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body onclick="PlayAudio()">
     <header class="header">
       <div class="header__principal contenedor">
         <div class="header__texto">
@@ -270,6 +270,12 @@
       </div>
     </div>
 
+    <footer>
+      <audio id="musica">
+        <source src="audio/carlos_vives.mp3" />
+      </audio>
+    </footer>
+
     <!--
     <div class="ceremonia">
       <h4>19:30h</h4>
@@ -422,5 +428,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/reloj.js"></script>
     <script src="./js/carousel.js"></script>
+    <script>
+      function PlayAudio() {
+        document.getElementById("musica").play();
+      }
+    </script>
   </body>
 </html>

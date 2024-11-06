@@ -395,6 +395,7 @@ img {
   border: none !important;
 }
 
+/* Galeria */
 .bg {
   background-color: #f1f9f5;
   padding: 3rem 0;
@@ -413,7 +414,7 @@ img {
 }
 
 .carousel {
-  margin-top: -3rem;
+  margin-top: -5rem;
 }
 
 .carousel .carousel-item {
