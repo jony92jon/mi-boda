@@ -36,24 +36,26 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body onclick="PlayAudio()">
-    <button id="play">
-      <svg
-        class="icono__musica"
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
-        fill="currentColor"
-        class="bi bi-music-note-beamed"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
-        />
-        <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z" />
-        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z" />
-      </svg>
-    </button>
+  <body>
+    <div class="estatico">
+      <button id="play">
+        <svg
+          class="icono__musica"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-music-note-beamed"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
+          />
+          <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z" />
+          <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z" />
+        </svg>
+      </button>
+    </div>
     <header class="header">
       <div class="header__principal contenedor">
         <div class="header__texto">
@@ -148,7 +150,7 @@
       </div>
     </header>
 
-    <div class="programa__itinerario contenedor">
+    <div class="programa__itinerario borde contenedor">
       <div class="icono__ceremonia contenedor"></div>
       <div class="etiqueta__caja">
         <h3>Ceremonia</h3>
@@ -166,8 +168,52 @@
       <div class="lugar">
         <h6>Lugar</h6>
         <p>Caserón de Araceli</p>
-        <a href="#">Confirmar Asistencia</a>
-      </div>
+        <a id="boton" href="#">Confirmar Asistencia</a>
+      <div>
+        
+        <dialog id="modal">
+          <h2>Contacto</h2>
+  
+          <form method="dialog post" class="formulario" action="https://formsubmit.co/jony92jon@gmail.com">
+            <fieldset>
+              <legend>Contactanos llenando todos los campos</legend>
+  
+              <div class="contenedor-campos">
+                <div class="campo">
+                  <label for="">Nombre</label>
+                  <input class="input-text" type="text" placeholder="Nombre" name="nombre" />
+                </div>
+  
+                <div class="campo">
+                  <label for="">Teléfono</label>
+                  <input class="input-text" type="tel" placeholder="Teléfono" name="telefono" />
+                </div>
+  
+                <div class="campo">
+                  <label for="">Correo</label>
+                  <input class="input-text" type="email" placeholder="Email" name="correo" />
+                </div>
+  
+                <div class="campo">
+                  <label for="">Mensaje</label>
+                  <textarea
+                    class="input-text"
+                    name="mensaje"
+                    id="mensaje"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </div>
+              <!-- .contenedor-campos -->
+  
+              <div class="alinear-derecha flex">
+                <input class="boton w-sm-100" type="submit" value="Enviar" name="enviar" />
+              </div>
+            </fieldset>
+          </form>
+        </dialog>
+
 
       <div class="direccion">
         <h6>Dirección</h6>
@@ -190,17 +236,11 @@
       <div class="fecha">
         <h6>Día</h6>
         <p>31 de Mayo 2025 - 20:30</p>
-        <a
-          target="_blank"
-          href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NG4waTNxY3J0ZmIwdDBhdTRtYm10b3IyOWUgaXNtYWVsYmFra2FsaWNoYWlyaUBt&amp;tmsrc=ismaelbakkalichairi%40gmail.com"
-          >Agendar</a
-        >
       </div>
 
       <div class="lugar">
         <h6>Lugar</h6>
         <p>Caserón de Araceli</p>
-        <a href="#">Confirmar Asistencia</a>
       </div>
 
       <div class="direccion">
@@ -435,22 +475,10 @@
         </div>
       </div>
     </div>
+-->
 
-    <footer class="footer">
-      <div class="footer__primero">
-        <h4>Aqui tienes un QR con la url de tu web</h4>
-      </div>
-    </footer>
-    -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/reloj.js"></script>
     <script src="./js/carousel.js"></script>
-    <!--
-    <script>
-      function PlayAudio() {
-        document.getElementById("musica").play();
-      }
-    </script>
-    -->
   </body>
 </html>

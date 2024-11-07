@@ -15,7 +15,7 @@ const play = document.
 getElementById('play');
 
 const audio = new Audio();
-audio.src = "../audio/carlos_vives.mp3"
+audio.src = "../audio/Juan Luis Guerra 440 – Vale La Pena.mp3"
 
 play.addEventListener
 ('click', function(){
@@ -28,5 +28,19 @@ play.addEventListener
     }
 })
 
+
+const boton = 
+document.querySelector("#boton");
+const modal =
+document.querySelector("#modal");
+const cerrar =
+document.querySelector("#cerrar");
+
+boton.addEventListener("click", ()=>{
+    modal.showModal();
+})
+cerrar.addEventListener("click", ()=>{
+    modal.close();
+})
 
        
