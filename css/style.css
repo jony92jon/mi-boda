@@ -586,6 +586,18 @@ section h2 {
   font-family: var(--fuente-secundaria);
 }
 
+.opciones {
+  opacity: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.opciones input[type="checkbox"] {
+  position: relative;
+  opacity: initial;
+}
+
 /* Modal */
 #modal {
   border: 1px solid gray;
