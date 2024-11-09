@@ -593,11 +593,6 @@ section h2 {
   align-items: center;
 }
 
-.opciones input[type="checkbox"] {
-  position: relative;
-  opacity: initial;
-}
-
 /* Modal */
 #modal {
   border: 1px solid gray;
