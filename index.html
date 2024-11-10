@@ -167,7 +167,7 @@
 
       <div class="lugar">
         <h6>Lugar</h6>
-        <p>Caserón de Araceli</p>
+        <p class="lugar__parrafo">Caserón de Araceli</p>
         <a id="boton" href="#">Confirmar Asistencia</a>
       <div>
         
@@ -176,7 +176,15 @@
   
           <form method="post" class="formulario" action="https://formsubmit.co/jony92jon@gmail.com">
             <fieldset>
-              <legend>Confirma la asistencia llenando todos los campos</legend>
+
+              <div class="opciones">
+                <p class="opciones__parrafo">Confirma tu asistencia.</p>
+                <select name="seleccion" id="seleccion">
+                  <option selected disabled>--Selecciona una opción--</option>
+                  <option value="1">Si</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
   
               <div class="contenedor-campos">
                 <div class="campo">
@@ -195,16 +203,12 @@
                 </div>
 
                 <div class="opciones">
-                  <label for="">
-                    <input type="checkbox" name="opcion1">
-                    <span>Carne</span>
-                  </label> 
-                </div>
-                <div class="opciones">
-                  <label>
-                    <input type="checkbox" name="opcion2">
-                    <span>Pescado</span>
-                  </label>
+                  <p class="opciones__parrafo">¿Que comida prefieres?</p>
+                  <select name="seleccion" id="seleccion">
+                    <option value="" disabled selected>--Selecciona una opción--</option>
+                    <option value="1">Carne</option>
+                    <option value="2">Pescado</option>
+                  </select>
                 </div>
   
                 <div class="campo">

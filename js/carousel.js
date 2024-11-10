@@ -15,7 +15,7 @@ const play = document.
 getElementById('play');
 
 const audio = new Audio();
-audio.src = "../audio/Juan Luis Guerra 440 – Vale La Pena.mp3"
+audio.src = "../audio/photograph   ed sheeran.mp3"
 
 play.addEventListener
 ('click', function(){
@@ -42,5 +42,7 @@ boton.addEventListener("click", ()=>{
 cerrar.addEventListener("click", ()=>{
     modal.close();
 })
+
+
 
        

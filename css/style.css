@@ -299,7 +299,7 @@ button .icono__musica {
   font-weight: bold;
 }
 
-.programa__itinerario .lugar p {
+.programa__itinerario .lugar .lugar__parrafo {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
@@ -537,7 +537,7 @@ button .icono__musica {
 }
 
 .boton {
-  background-color: #dfd1a7;
+  background-color: #ae9e6c;
   font-family: var(--fuente-secundaria);
   padding: 0.8rem 2rem;
   margin-top: 1rem;
@@ -586,14 +586,30 @@ section h2 {
   font-family: var(--fuente-secundaria);
 }
 
-.opciones {
-  opacity: 1;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.opciones select {
+  display: initial;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  height: 4.2rem;
+  outline: 0;
+  border: none;
+  border-radius: 1.2rem;
+  background-color: #f0f0f0;
+  color: rgb(99, 99, 99);
+  font-weight: bold;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin-top: 1.5rem;
 }
 
-.opciones {
+.opciones select:hover {
+  background-color: #fcf6f1;
+}
+
+.opciones .opciones__parrafo {
+  font-family: var(--fuente-secundaria);
+  font-weight: bold;
+  font-size: 1.7rem;
 }
 
 /* Modal */
