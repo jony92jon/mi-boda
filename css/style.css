@@ -75,7 +75,7 @@ button .icono__musica {
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../img/IMG-20241109-WA0054.jpg);
+    url(../img/Fotos/2024-11-10\ 21.45.53.jpg);
   height: 90rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,12 +85,12 @@ button .icono__musica {
 
 .header__texto {
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
 .header__texto h2 {
   font-size: 8rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
   color: var(--blanco);
   font-weight: bold;
   font-family: var(--fuente-principal);
@@ -105,6 +105,14 @@ button .icono__musica {
   margin-top: 7rem;
 }
 
+.header__texto .icon {
+  margin-top: 6rem;
+}
+
+.header__texto h2:nth-last-child(2) {
+  margin-top: 6rem;
+}
+
 /* Reloj */
 
 .reloj__contenedor__aros {
@@ -112,7 +120,7 @@ button .icono__musica {
   height: 45vh;
   background: url(../img/img_circuloContador01.svg) center center no-repeat;
   position: absolute;
-  bottom: -20rem;
+  bottom: -14rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -219,7 +227,7 @@ button .icono__musica {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 26rem;
+  margin-top: 20rem;
 }
 .programa__itinerario .etiqueta__caja {
   width: 20rem;
