@@ -74,7 +74,7 @@ button .icono__musica {
 }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../img/Fotos/1-2.jpg);
   height: 90rem;
   background-size: cover;
@@ -99,7 +99,7 @@ button .icono__musica {
 .header__texto .texto {
   font-family: var(--fuente-secundaria);
   color: var(--blanco);
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   transform: rotate(0);
   transition: all 2s ease-in-out;
   margin-top: 7rem;
@@ -120,7 +120,7 @@ button .icono__musica {
   height: 45vh;
   background: url(../img/img_circuloContador01.svg) center center no-repeat;
   position: absolute;
-  bottom: -14rem;
+  bottom: -16rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -397,6 +397,7 @@ button .icono__musica {
 /*Sección Regalos*/
 .regalos {
   margin-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .regalos__info {
