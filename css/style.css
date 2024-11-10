@@ -74,8 +74,8 @@ button .icono__musica {
 }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/Principal.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/IMG-20241109-WA0054.jpg);
   height: 90rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -591,6 +591,9 @@ section h2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.opciones {
 }
 
 /* Modal */
