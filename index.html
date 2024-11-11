@@ -174,12 +174,11 @@
         <dialog id="modal">
           <h2>Contacto</h2>
   
-          <form method="post" class="formulario" action="https://formsubmit.co/jony92jon@gmail.com">
+          <form class="formulario" id="formulario_asistencia">
             <fieldset>
-
               <div class="opciones">
                 <p class="opciones__parrafo">Confirma tu asistencia.</p>
-                <select name="seleccion" id="seleccion">
+                <select name="asistencia" id="asistencia">
                   <option selected disabled>--Selecciona una opción--</option>
                   <option value="1">Si</option>
                   <option value="2">No</option>
@@ -188,23 +187,23 @@
   
               <div class="contenedor-campos">
                 <div class="campo">
-                  <label for="">Nombre</label>
-                  <input class="input-text" type="text" placeholder="Nombre" name="nombre" />
+                  <label for="nombre">Nombre</label>
+                  <input class="input-text" type="text" placeholder="Nombre" name="nombre" id="nombre" />
                 </div>
   
                 <div class="campo">
-                  <label for="">Teléfono</label>
-                  <input class="input-text" type="tel" placeholder="Teléfono" name="telefono" />
+                  <label for="telefono">Teléfono</label>
+                  <input class="input-text" type="tel" placeholder="Teléfono" name="telefono" id="telefono" />
                 </div>
   
                 <div class="campo">
-                  <label for="">Correo</label>
-                  <input class="input-text" type="email" placeholder="Email" name="correo" />
+                  <label for="correo">Correo</label>
+                  <input class="input-text" type="email" placeholder="Email" name="correo" id="correo" />
                 </div>
 
                 <div class="opciones">
                   <p class="opciones__parrafo">¿Que comida prefieres?</p>
-                  <select name="seleccion" id="seleccion">
+                  <select name="comida" id="comida">
                     <option value="" disabled selected>--Selecciona una opción--</option>
                     <option value="1">Carne</option>
                     <option value="2">Pescado</option>
@@ -212,7 +211,7 @@
                 </div>
   
                 <div class="campo">
-                  <label for="">Mensaje</label>
+                  <label for="mensaje">Mensaje</label>
                   <textarea
                     class="input-text"
                     name="mensaje"
@@ -222,9 +221,9 @@
                   ></textarea>
                 </div>
               </div>
-              <!-- .contenedor-campos -->
-  
+
               <div class="alinear-derecha flex">
+                <!-- <button type="button" id="closeDialogID" class="boton w-sm-100">Cancelar</button> -->
                 <input id="closeDialogID" class="boton w-sm-100" type="submit" value="Enviar" name="enviar" />
               </div>
             </fieldset>
