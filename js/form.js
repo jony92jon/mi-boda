@@ -20,11 +20,13 @@ form.addEventListener("submit", async (e) => {
   const formData = new FormData(form);
   const formDataObject = Object.fromEntries(formData.entries());
 
-  console.log("Datos del formulario:", formDataObject);
+  const API_BASE_URL =
+    false === "development"
+      ? "http://localhost:3000/submit"
+      : "https://fjumvjxo8d.execute-api.eu-central-1.amazonaws.com/Prod/submit";
 
   try {
-    // TODO: Reemplazar con la URL de la API
-    const response = await fetch("https://fakeapi.com/submit", {
+    const response = await fetch(API_BASE_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
