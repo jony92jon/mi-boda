@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boda</title>
+    <title>Jonathan & Rosa · Nuestra Boda</title>
     <meta name="description" content="Página web de boda" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -59,28 +61,10 @@
     <header class="header">
       <div class="header__principal contenedor">
         <div class="header__texto">
-          <h2 class="no-margin no-padding">JONATAN</h2>
-          <div class="icono">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-ampersand"
-              width="56"
-              height="56"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#ffffff"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M19 20l-10.403 -10.972a2.948 2.948 0 0 1 0 -4.165a2.94 2.94 0 0 1 4.161 0a2.948 2.948 0 0 1 0 4.165l-4.68 4.687a3.685 3.685 0 0 0 0 5.207a3.675 3.675 0 0 0 5.2 0l5.722 -5.922"
-              />
-            </svg>
-          </div>
-          <h2 class="no-margin no-padding">ROSA</h2>
-          <p class="texto">¡Nos Casamos!</p>
+          <h1 class="names animate-fade-in">Jonathan & Rosa</h1>
+          <p class="date animate-fade-in">15 · 06 · 2024</p>
+          <p class="announcement animate-fade-in">¡Nos Casamos!</p>
+          <span></span>
         </div>
       </div>
       <div class="reloj__contenedor__aros">
@@ -169,67 +153,92 @@
         <h6>Lugar</h6>
         <p class="lugar__parrafo">Caserón de Araceli</p>
         <a id="confirmDialogID" href="#">Confirmar Asistencia</a>
-      <div>
-        
-        <dialog id="modal">
-          <h2>Contacto</h2>
-  
-          <form class="formulario" id="formulario_asistencia">
-            <fieldset>
+      </div>
+
+      <dialog id="modal">
+        <h2>Contacto</h2>
+
+        <form class="formulario" id="formulario_asistencia">
+          <fieldset>
+            <div class="opciones">
+              <p class="opciones__parrafo">Confirma tu asistencia.</p>
+              <select name="asistencia" id="asistencia">
+                <option selected disabled>--Selecciona una opción--</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Nombre"
+                  name="nombre"
+                  id="nombre"
+                />
+              </div>
+
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input
+                  class="input-text"
+                  type="tel"
+                  placeholder="Teléfono"
+                  name="telefono"
+                  id="telefono"
+                />
+              </div>
+
+              <div class="campo">
+                <label for="correo">Correo</label>
+                <input
+                  class="input-text"
+                  type="email"
+                  placeholder="Email"
+                  name="correo"
+                  id="correo"
+                />
+              </div>
+
               <div class="opciones">
-                <p class="opciones__parrafo">Confirma tu asistencia.</p>
-                <select name="asistencia" id="asistencia">
-                  <option selected disabled>--Selecciona una opción--</option>
-                  <option value="1">Si</option>
-                  <option value="2">No</option>
+                <p class="opciones__parrafo">¿Que comida prefieres?</p>
+                <select name="comida" id="comida">
+                  <option value="" disabled selected>
+                    --Selecciona una opción--
+                  </option>
+                  <option value="1">Carne</option>
+                  <option value="2">Pescado</option>
                 </select>
               </div>
-  
-              <div class="contenedor-campos">
-                <div class="campo">
-                  <label for="nombre">Nombre</label>
-                  <input class="input-text" type="text" placeholder="Nombre" name="nombre" id="nombre" />
-                </div>
-  
-                <div class="campo">
-                  <label for="telefono">Teléfono</label>
-                  <input class="input-text" type="tel" placeholder="Teléfono" name="telefono" id="telefono" />
-                </div>
-  
-                <div class="campo">
-                  <label for="correo">Correo</label>
-                  <input class="input-text" type="email" placeholder="Email" name="correo" id="correo" />
-                </div>
 
-                <div class="opciones">
-                  <p class="opciones__parrafo">¿Que comida prefieres?</p>
-                  <select name="comida" id="comida">
-                    <option value="" disabled selected>--Selecciona una opción--</option>
-                    <option value="1">Carne</option>
-                    <option value="2">Pescado</option>
-                  </select>
-                </div>
-  
-                <div class="campo">
-                  <label for="mensaje">Mensaje</label>
-                  <textarea
-                    class="input-text"
-                    name="mensaje"
-                    id="mensaje"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </div>
+              <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  class="input-text"
+                  name="mensaje"
+                  id="mensaje"
+                  cols="30"
+                  rows="10"
+                ></textarea>
               </div>
+            </div>
 
-              <div class="alinear-derecha flex">
-                <!-- <button type="button" id="closeDialogID" class="boton w-sm-100">Cancelar</button> -->
-                <input id="closeDialogID" class="boton w-sm-100" type="submit" value="Enviar" name="enviar" />
-              </div>
-            </fieldset>
-          </form>
-        </dialog>
-
+            <div class="alinear-derecha flex">
+              <!-- <button type="button" id="closeDialogID" class="boton w-sm-100">Cancelar</button> -->
+              <input
+                id="closeDialogID"
+                class="boton w-sm-100"
+                type="submit"
+                value="Enviar"
+                name="enviar"
+              />
+            </div>
+          </fieldset>
+        </form>
+      </dialog>
 
       <div class="direccion">
         <h6>Dirección</h6>
@@ -358,7 +367,7 @@
         </p>
         <p>La asistencia es obligatoria, el regalo opcional</p>
         <p>
-          Aún asi, si nos queréis ayudar en esta nueva etapa de nuestra vida:
+          Aún así, si nos queréis ayudar en esta nueva etapa de nuestra vida:
         </p>
         <span>ES0789587645553674</span>
       </div>

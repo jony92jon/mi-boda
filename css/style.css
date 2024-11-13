@@ -41,6 +41,7 @@ p {
 .contenedor {
   width: min(90%, 120rem);
   margin: 0 auto;
+  padding: 4rem 1rem;
 }
 
 img {
@@ -80,7 +81,12 @@ button .icono__musica {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__texto {
@@ -88,12 +94,37 @@ button .icono__musica {
   padding-top: 1rem;
 }
 
-.header__texto h2 {
+.header__texto h1, .header__texto h2 {
   font-size: 8rem;
   margin-top: 2rem;
   color: var(--blanco);
   font-weight: bold;
   font-family: var(--fuente-principal);
+}
+
+.date {
+  font-size: clamp(2.5rem, 4vw, 2.5rem);
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards 0.3s;
+  color: var(--blanco);
+}
+
+.announcement {
+  font-size: clamp(2.2rem, 3.5vw, 2rem);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards 0.6s;
+  color: var(--blanco);
+}
+
+.names {
+  font-size: clamp(3rem, 10vw, 6rem);
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
 }
 
 .header__texto .texto {
@@ -228,6 +259,7 @@ button .icono__musica {
   justify-content: center;
   align-items: center;
   margin-top: 20rem;
+  gap: 2rem;
 }
 .programa__itinerario .etiqueta__caja {
   width: 20rem;
@@ -253,6 +285,7 @@ button .icono__musica {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .programa__itinerario .fecha h6 {
@@ -268,9 +301,10 @@ button .icono__musica {
 .programa__itinerario .fecha p {
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
-  margin-top: 0.2rem;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
   color: gray;
+  text-align: center;
   font-family: var(--fuente-secundaria);
 }
 
@@ -295,6 +329,7 @@ button .icono__musica {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .programa__itinerario .lugar h6 {
@@ -305,6 +340,16 @@ button .icono__musica {
   margin-top: 2rem;
   font-family: var(--fuente-secundaria);
   font-weight: bold;
+}
+
+.programa__itinerario .lugar p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+  color: gray;
+  text-align: center;
+  font-family: var(--fuente-secundaria);
 }
 
 .programa__itinerario .lugar .lugar__parrafo {
@@ -337,6 +382,7 @@ button .icono__musica {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .programa__itinerario .direccion h6 {
@@ -635,3 +681,26 @@ section h2 {
 #modal fieldset {
   color: #957a51;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
