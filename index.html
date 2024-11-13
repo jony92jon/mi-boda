@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boda Jonathan & Rosa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <audio id="backgroundMusic" loop>
+      <source src="./audio/12. Bachata Rosa.mp3" type="audio/mp3" />
+    </audio>
+  </head>
+  <body>
+    <main
+      class="min-h-screen w-full flex flex-col items-center justify-center p-4 bg-[#8BA69C]"
+    >
+      <div class="text-center space-y-6 max-w-2xl mx-auto">
+        <h1 class="text-white text-4xl md:text-5xl font-light leading-relaxed">
+          Bienvenidos a la invitación de
+          <span class="block mt-2">Jonathan & Rosa</span>
+        </h1>
+
+        <p class="text-white/90 text-lg md:text-xl font-light mb-8">
+          La música de fondo es parte de la experiencia
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          <button
+            id="withMusic"
+            class="px-6 py-3 bg-[#C5B9A6] text-white rounded-full hover:bg-[#B5A996] transition-colors duration-300 min-w-[200px]"
+          >
+            INGRESAR CON MÚSICA
+          </button>
+
+          <button
+            id="withoutMusic"
+            class="px-6 py-3 bg-[#C5B9A6] text-white rounded-full hover:bg-[#B5A996] transition-colors duration-300 min-w-[200px]"
+          >
+            INGRESAR SIN MÚSICA
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./js/audio.js"></script>
+    <script src="./js/landing.js"></script>
+  </body>
+</html>
