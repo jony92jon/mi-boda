@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Gracias por confirmar!</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </head>
+  <body class="success-page">
+    <div class="success-container">
+      <button id="heartButton" class="heart-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="80"
+          height="80"
+          viewBox="0 0 24 24"
+          fill="red"
+          stroke="red"
+        >
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+      </button>
+      <div class="success-content hidden" id="successMessage">
+        <h1 class="success-title pulse">¡Gracias!</h1>
+        <p class="success-subtitle bounce">Hemos recibido tu confirmación</p>
+        <p class="success-text">Nos vemos en la boda de tus mejores amigos</p>
+      </div>
+
+      <div class="heart-section">
+        <p class="heart-text">Haz click en el corazón para celebrar el amor</p>
+        <p id="heartCount" class="heart-count">0 likes de amor</p>
+      </div>
+
+      <div id="floatingEmojis" class="floating-emojis"></div>
+    </div>
+    <script src="js/success.js"></script>
+  </body>
+</html>

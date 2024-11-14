@@ -49,7 +49,7 @@ img {
 }
 
 /*Header*/
-button {
+.music-toggle {
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid #bfa880;
@@ -61,16 +61,16 @@ button {
   position: fixed;
 }
 
-button:hover {
+.music-toggle:hover {
   cursor: pointer;
   background-color: #dddcda;
 }
 
-button:focus {
+.music-toggle:focus {
   background-color: transparent;
 }
 
-button .icono__musica {
+.music-toggle .icono__musica {
   color: #bfa880;
 }
 
@@ -702,5 +702,122 @@ section h2 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.success-page {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #fecdd3, #fecaca, #e9d5ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.success-container {
+    max-width: 28rem;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.success-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.success-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.success-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #dc2626;
+    margin-bottom: 1.5rem;
+}
+
+.success-subtitle {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.success-text {
+    font-size: 1.25rem;
+    color: #4b5563;
+}
+
+.heart-section {
+    margin-top: 3rem;
+}
+
+.heart-text {
+    font-size: 1.125rem;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+.heart-button {
+    background: none;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding: 0.5rem;
+}
+
+.heart-button:hover {
+    transform: scale(1.1);
+}
+
+.heart-button:active {
+    transform: scale(0.9);
+}
+
+.heart-count {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #dc2626;
+}
+
+.floating-emojis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.emoji {
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+/* Animations */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+.bounce {
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
 }
 

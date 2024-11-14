@@ -35,9 +35,9 @@ form.addEventListener("submit", async (e) => {
     });
 
     if (response.ok) {
-      alert("¡Gracias por confirmar tu asistencia!");
       form.reset();
       closeModal();
+      window.location.href = "success.html";
     } else {
       throw new Error("Error al enviar el formulario");
     }
