@@ -444,6 +444,45 @@ img {
   width: 11rem;
 }
 
+.linea {
+  position: absolute;
+  border: 1px solid rgb(194, 192, 192);
+  left: 15.5rem;
+  height: 100%;
+}
+
+.programa__contenido .primero::before {
+  content: "";
+  position: absolute;
+  border: 1px solid rgb(194, 192, 192);
+  width: 2.7rem;
+  left: 13rem;
+}
+
+.programa__contenido .segundo::before {
+  content: "";
+  position: absolute;
+  border: 1px solid rgb(194, 192, 192);
+  width: 2.7rem;
+  right: 13rem;
+}
+
+.programa__contenido .tercero::before {
+  content: "";
+  position: absolute;
+  border: 1px solid rgb(194, 192, 192);
+  width: 2.7rem;
+  left: 13rem;
+}
+
+.programa__contenido .cuarto::before {
+  content: "";
+  position: absolute;
+  border: 1px solid rgb(194, 192, 192);
+  width: 2.7rem;
+  right: 13rem;
+}
+
 .programa {
   display: flex;
   flex-direction: column;
@@ -482,6 +521,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5rem;
+  position: relative;
 }
 
 .programa__contenido--primero {
@@ -992,7 +1032,8 @@ section h2 {
 
 /* Seccion__imagen */
 .seccion__imagen {
-  background-image: url(../img/Fotos/1-6.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/Fotos/1-20.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1001,7 +1042,7 @@ section h2 {
 
 /* Footer */
 .footer {
-  background-color: var(--color-3);
+  background-color: #c18a7a;
   height: 15rem;
   display: flex;
   justify-content: center;
