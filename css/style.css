@@ -612,6 +612,10 @@ img {
 /*Sección Regalos*/
 .regalos {
   padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .regalos__info {
@@ -646,6 +650,18 @@ img {
   padding: 1rem;
   color: var(--blanco);
   font-weight: bold;
+}
+
+.transfer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transfer img {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
 }
 
 /* utilidades */
@@ -722,15 +738,19 @@ img {
 }
 
 /* Formulario */
-.contacto {
-  margin-top: 2rem;
+.modal {
+  padding: 2rem;
+}
+
+.modal h2 {
+  font-size: 2.2rem;
 }
 
 .formulario {
   background-color: var(--blanco);
   width: min(60rem, 100%);
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 1rem;
 }
 
@@ -791,7 +811,7 @@ img {
 }
 
 .boton {
-  background-color: #ae9e6c;
+  background-color: var(--color-3);
   font-family: var(--fuente-secundaria);
   padding: 0.8rem 2rem;
   margin-top: 1rem;
@@ -803,6 +823,7 @@ img {
   width: 90%;
   text-align: center;
   border: none;
+  color: var(--negro);
 }
 
 @media (min-width: 480px) {
@@ -850,20 +871,21 @@ section h2 {
   border: none;
   border-radius: 1.2rem;
   background-color: #f0f0f0;
-  color: rgb(99, 99, 99);
+  color: #9d928f;
   font-weight: bold;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-3);
   margin-top: 1.5rem;
 }
 
 .opciones select:hover {
-  background-color: #fcf6f1;
+  background-color: #f2d9d8;
 }
 
 .opciones .opciones__parrafo {
   font-family: var(--fuente-secundaria);
   font-weight: bold;
   font-size: 1.7rem;
+  color: rgb(140, 94, 68);
 }
 
 /* Modal */
@@ -932,31 +954,37 @@ section h2 {
 }
 
 .success-title {
-  font-size: 3rem;
+  font-size: 5.5rem;
   font-weight: bold;
   color: #dc2626;
   margin-bottom: 1.5rem;
+  font-family: var(--fuente-secundaria);
 }
 
 .success-subtitle {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   color: #1f2937;
   margin-bottom: 1rem;
+  font-family: var(--fuente-secundaria);
 }
 
 .success-text {
-  font-size: 1.25rem;
+  font-size: 1.7rem;
   color: #4b5563;
+  font-family: var(--fuente-secundaria);
 }
 
 .heart-section {
   margin-top: 3rem;
+  font-family: var(--fuente-secundaria);
+  font-size: 1.5rem;
 }
 
 .heart-text {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: #374151;
   margin-bottom: 1rem;
+  font-family: var(--fuente-secundaria);
 }
 
 .heart-button {
@@ -1042,15 +1070,57 @@ section h2 {
 
 /* Footer */
 .footer {
-  background-color: #c18a7a;
-  height: 15rem;
+  background-color: #d0bdb4;
+  height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-box-shadow: 0px 1px 39px 1px rgba(107, 105, 103, 1);
+  -moz-box-shadow: 0px 1px 39px 1px rgba(107, 105, 103, 1);
+  box-shadow: 0px 1px 39px 1px rgba(107, 105, 103, 1);
+}
+
+.footer__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__contenido-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2;
+  margin-bottom: 3rem;
+}
+
+.footer--recordatorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-family: var(--fuente-secundaria);
+}
+
+.footer--recordatorio .footer--recordatorio_texto h5 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.footer--recordatorio .footer--recordatorio_texto span {
+  font-size: 1.3rem;
+  font-weight: lighter;
 }
 
 .footer h4 {
   font-family: var(--fuente-secundaria);
   font-weight: bold;
   font-size: 2rem;
+  text-align: center;
+}
+
+.footer img {
+  width: 4rem;
+  height: 4rem;
 }
