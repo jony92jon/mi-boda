@@ -611,7 +611,7 @@ img {
 
 /*Sección Regalos*/
 .regalos {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1058,6 +1058,65 @@ section h2 {
   transform: translateY(20px);
 }
 
+/* Compartir */
+.compartir {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.compartir__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.compartir__contenido .compartir__contenido-texto {
+  text-align: center;
+  font-family: var(--fuente-secundaria);
+  margin-bottom: 2rem;
+}
+
+.compartir__contenido .compartir__contenido-texto h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  color: rgb(136, 69, 30);
+}
+
+.compartir__contenido .compartir__contenido-texto h4 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: rgb(193, 144, 115);
+}
+
+.compartir__contenido .compartir__contenido-imagen {
+  margin-bottom: 2rem;
+}
+
+.compartir__contenido a {
+  text-decoration: none;
+  color: var(--blanco);
+  background-color: var(--color-3);
+  padding: 0.8rem 2rem;
+  border-radius: 2.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.compartir__contenido a:hover {
+  cursor: pointer;
+  background-color: #c59d91;
+}
+
+.compartir__contenido .compartir__contenido-imagen img {
+  width: 7rem;
+  height: 7rem;
+}
+
 /* Seccion__imagen */
 .seccion__imagen {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -1075,9 +1134,9 @@ section h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0px 1px 39px 1px rgba(107, 105, 103, 1);
-  -moz-box-shadow: 0px 1px 39px 1px rgba(107, 105, 103, 1);
-  box-shadow: 0px 1px 39px 1px rgba(107, 105, 103, 1);
+  -webkit-box-shadow: 0px 0px 31px 6px rgba(206, 144, 125, 1);
+  -moz-box-shadow: 0px 0px 31px 6px rgba(206, 144, 125, 1);
+  box-shadow: 0px 0px 31px 6px rgba(206, 144, 125, 1);
 }
 
 .footer__contenido {
