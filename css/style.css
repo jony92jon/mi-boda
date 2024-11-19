@@ -322,7 +322,7 @@ img {
 }
 
 .programa__itinerario .fecha a:hover {
-  background-color: #bfa880;
+  background-color: #c19d92;
   color: var(--blanco);
 }
 
@@ -377,7 +377,7 @@ img {
 }
 
 .programa__itinerario .lugar a:hover {
-  background-color: #bfa880;
+  background-color: #c19d92;
   color: var(--blanco);
 }
 
@@ -422,7 +422,7 @@ img {
 }
 
 .programa__itinerario .direccion a:hover {
-  background-color: #bfa880;
+  background-color: #c19d92;
   color: var(--blanco);
 }
 
@@ -440,8 +440,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 11rem;
-  width: 11rem;
+  height: 10rem;
+  width: 10rem;
 }
 
 .linea {
@@ -645,7 +645,7 @@ img {
 .regalos__info span {
   font-size: 1.9rem;
   font-family: var(--fuente-secundaria);
-  background-color: var(--color-2);
+  background-color: var(--color-3);
   border-radius: 1.6rem;
   padding: 1rem;
   color: var(--blanco);
@@ -954,7 +954,7 @@ section h2 {
 }
 
 .success-title {
-  font-size: 5.5rem;
+  font-size: 6.5rem;
   font-weight: bold;
   color: #dc2626;
   margin-bottom: 1.5rem;
@@ -962,14 +962,14 @@ section h2 {
 }
 
 .success-subtitle {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   color: #1f2937;
   margin-bottom: 1rem;
   font-family: var(--fuente-secundaria);
 }
 
 .success-text {
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: #4b5563;
   font-family: var(--fuente-secundaria);
 }
@@ -977,11 +977,11 @@ section h2 {
 .heart-section {
   margin-top: 3rem;
   font-family: var(--fuente-secundaria);
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 .heart-text {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #374151;
   margin-bottom: 1rem;
   font-family: var(--fuente-secundaria);
@@ -1005,7 +1005,7 @@ section h2 {
 }
 
 .heart-count {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #dc2626;
 }
@@ -1070,7 +1070,7 @@ section h2 {
 
 /* Footer */
 .footer {
-  background-color: #d0bdb4;
+  background-color: #ce907d;
   height: 20rem;
   display: flex;
   justify-content: center;
@@ -1105,18 +1105,18 @@ section h2 {
 
 .footer--recordatorio .footer--recordatorio_texto h5 {
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .footer--recordatorio .footer--recordatorio_texto span {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: lighter;
 }
 
 .footer h4 {
   font-family: var(--fuente-secundaria);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-align: center;
 }
 
