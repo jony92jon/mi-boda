@@ -267,6 +267,7 @@ img {
   margin-bottom: 3rem;
   border-radius: 1.7rem;
 }
+
 .programa__itinerario .etiqueta__caja {
   width: 20rem;
   height: 6rem;
@@ -616,7 +617,7 @@ img {
 
 /*Sección Regalos*/
 .regalos {
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -626,6 +627,25 @@ img {
 .regalos__info {
   text-align: center;
   margin-top: 4rem;
+}
+
+.regalos__info button {
+  margin-bottom: 2.3rem;
+  margin-top: 2.5rem;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(157, 147, 158, 1);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(157, 147, 158, 1);
+  box-shadow: 0px 0px 30px 0px rgba(157, 147, 158, 1);
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.regalos__info button:hover {
+  cursor: pointer;
+  background-color: #c0b4b0;
+}
+
+.desplegable:hover .transfer {
+  display: block;
 }
 
 .regalos__info h3 {
@@ -661,6 +681,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .transfer img {
@@ -1195,14 +1216,14 @@ section h2 {
 /* Index */
 .text-4xl {
   font-family: var(--fuente-secundaria);
-  font-size: 3.3rem;
-  padding-bottom: 2rem;
+  font-size: 3.7rem;
+  padding-bottom: 1rem;
 }
 
 .text-lg {
   font-family: var(--fuente-secundaria);
-  font-size: 1.8rem;
-  padding-bottom: 2rem;
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
 }
 
 .flex {
