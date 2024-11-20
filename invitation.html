@@ -180,7 +180,7 @@
           <fieldset>
             <div class="opciones">
               <p class="opciones__parrafo">¿Nos confirmáis asistencia?</p>
-              <select name="asistencia" id="asistencia" required>
+              <select name="asistencia" required id="asistencia">
                 <option selected disabled>--Selecciona una opción--</option>
                 <option value="si">Si</option>
                 <option value="no">No</option>
@@ -191,24 +191,24 @@
               <div class="campo">
                 <label for="nombre">Nombre</label>
                 <input
+                  required
                   class="input-text"
                   type="text"
                   placeholder="Nombre"
                   name="nombre"
                   id="nombre"
-                  required
                 />
               </div>
 
               <div class="campo">
                 <label for="telefono">Teléfono</label>
                 <input
+                  required
                   class="input-text"
                   type="tel"
                   placeholder="Teléfono"
                   name="telefono"
                   id="telefono"
-                  required
                 />
               </div>
 
@@ -225,7 +225,7 @@
 
               <div class="opciones">
                 <p class="opciones__parrafo">¿Que comida prefieres?</p>
-                <select name="comida" id="comida" required>
+                <select name="comida" required id="comida">
                   <option value="" disabled selected>
                     --Selecciona una opción--
                   </option>
