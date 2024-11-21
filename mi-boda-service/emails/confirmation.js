@@ -32,11 +32,6 @@ const ConfirmationEmail = ({ name }) => {
         padding: 0;
       ">
         <table align="center" role="presentation" cellSpacing="0" cellPadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto; padding: 20px;">
-          <tr>
-            <td align="center" style="padding: 0 0 20px 0;">
-              <img src="https://boda-jon.s3.eu-central-1.amazonaws.com/1-9.jpg" alt="Jonatan y Rosa" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;" />
-            </td>
-          </tr>
           <tr style="width: 100%">
             <td>
               <table style="padding: 30px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">

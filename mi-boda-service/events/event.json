@@ -1,5 +1,5 @@
 {
-  "body": "{\"name\":\"Test User\",\"email\":\"ismaelbakkalichairi@gmail.com\"}",
+  "body": "{\"name\":\"Test User\",\"email\":\"ismaelbakkalichairi@gmail.com\",\"asistencia\":\"si\"}",
   "httpMethod": "POST",
   "headers": {
     "Content-Type": "application/json"

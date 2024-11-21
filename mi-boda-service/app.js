@@ -76,7 +76,7 @@ exports.submitForm = async (event) => {
       .promise();
 
     // If email is provided, send confirmation
-    if (data.email) {
+    if (data.email && data.asistencia === "si") {
       const emailHtml = ConfirmationEmail({ name: data.name });
       console.log("Email template generated");
 
