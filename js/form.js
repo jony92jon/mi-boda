@@ -20,6 +20,14 @@ form.addEventListener("submit", async (e) => {
   const formData = new FormData(form);
   const formDataObject = Object.fromEntries(formData.entries());
 
+  console.log(formDataObject, "formDataObject");
+
+  if (formDataObject.asistencia === "no") {
+    closeModal();
+    window.location.href = "no_going.html";
+    return;
+  }
+
   const API_BASE_URL =
     false === "development"
       ? "http://localhost:3000/submit"

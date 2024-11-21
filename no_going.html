@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lo sentimos que no puedas venir</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-b from-rose-50 to-white flex items-center justify-center p-4"
+  >
+    <div
+      class="max-w-xl w-full bg-white rounded-2xl shadow-lg p-8 md:p-12 text-center space-y-6 border border-rose-100"
+    >
+      <div class="flex justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-16 h-16 text-rose-300"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+          />
+          <path d="m12 13-1-1 2-2-3-3 2-2" />
+        </svg>
+      </div>
+
+      <h1 class="text-3xl md:text-4xl font-serif text-gray-800 mb-4">
+        Lamentamos que no puedas acompañarnos
+      </h1>
+
+      <div class="space-y-4 text-gray-600">
+        <p class="text-lg">
+          Entendemos que no siempre es posible estar presentes en todos los
+          momentos.
+        </p>
+
+        <p class="italic text-sm">
+          "A veces las ausencias son tan expresivas como las presencias"
+        </p>
+      </div>
+
+      <div class="pt-6">
+        <div class="text-sm text-gray-500">
+          Te mantendremos en nuestros pensamientos durante este día tan especial
+        </div>
+
+        <div class="mt-8 font-serif text-2xl text-rose-400">Rosa & Jonatan</div>
+      </div>
+
+      <div class="pt-6 border-t border-rose-100 mt-8">
+        <p class="text-sm text-gray-400">
+          Si tus planes cambian, no dudes en contactarnos
+        </p>
+      </div>
+    </div>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ["var(--fuente-secundaria)", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
