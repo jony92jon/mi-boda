@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const musicToggleBtn = document.getElementById("musicToggle");
-  const audio = new Audio("../audio/12. Bachata Rosa.mp3");
+  const audio = new Audio("../audio/photograph   ed sheeran.mp3");
 
   if (localStorage.getItem("playMusic") === "true") {
     audio.play();

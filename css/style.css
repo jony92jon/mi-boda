@@ -498,7 +498,7 @@ img {
   -moz-box-shadow: 0px 0px 30px -3px rgba(214, 210, 214, 1);
   box-shadow: 0px 0px 30px -3px rgba(214, 210, 214, 1);
   margin-bottom: 3rem;
-  margin-top: 7rem;
+  margin-top: 12rem;
   border-radius: 1.7rem;
 }
 
@@ -638,7 +638,6 @@ img {
 
 .regalos__info {
   text-align: center;
-  margin-top: 4rem;
 }
 
 .regalos__info h5 {
@@ -668,7 +667,7 @@ img {
 }
 
 .regalos__info span {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: var(--fuente-secundaria);
   background-color: var(--color-3);
   border-radius: 1.6rem;
@@ -680,13 +679,14 @@ img {
 .transfer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
 .transfer img {
-  width: 4rem;
-  height: 4rem;
-  margin-right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 2rem;
 }
 
 /* utilidades */
