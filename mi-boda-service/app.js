@@ -76,16 +76,20 @@ exports.submitForm = async (event) => {
       const emailHtml = ConfirmationEmail({ name: data.name });
       console.log("Email template generated");
 
-      await transporter.sendMail({
-        from: {
-          name: "Wedding RSVP",
-          address: "ismaelbakkalichairi@gmail.com",
-        },
-        to: data.email,
-        subject: "Thanks for your RSVP!",
-        html: emailHtml,
-        text: `Thank you for your RSVP, ${data.name}! We're excited to have you at our wedding celebration.`,
-      });
+      try {
+        await transporter.sendMail({
+          from: {
+            name: "Wedding RSVP",
+            address: "ismaelbakkalichairi@gmail.com",
+          },
+          to: data.email,
+          subject: "Thanks for your RSVP!",
+          html: emailHtml,
+          text: `Thank you for your RSVP, ${data.name}! We're excited to have you at our wedding celebration.`,
+        });
+      } catch (emailError) {
+        console.error("Error sending email:", emailError);
+      }
     }
 
     return {

@@ -31,6 +31,8 @@ Resources:
       Policies:
         - DynamoDBCrudPolicy:
             TableName: !Ref FormDataTable
+        - SSMParameterReadPolicy:
+            ParameterName: /mi-boda/smtp/*
       Events:
         ApiPost:
           Type: Api
@@ -46,10 +48,10 @@ Resources:
             RestApiId: !Ref ServerlessRestApi
       Environment:
         Variables:
-          SMTP_HOST: '{{resolve:ssm:/mi-boda/smtp/host:1}}'
-          SMTP_PORT: '{{resolve:ssm:/mi-boda/smtp/port:1}}'
-          SMTP_USER: '{{resolve:ssm:/mi-boda/smtp/user:1}}'
-          SMTP_PASS: '{{resolve:ssm:/mi-boda/smtp/pass:1}}'
+          SMTP_HOST: '{{resolve:ssm:/mi-boda/smtp/host}}'
+          SMTP_PORT: '{{resolve:ssm:/mi-boda/smtp/port}}'
+          SMTP_USER: '{{resolve:ssm:/mi-boda/smtp/user}}'
+          SMTP_PASS: '{{resolve:ssm:/mi-boda/smtp/pass}}'
 
   ServerlessRestApi:
     Type: AWS::Serverless::Api
