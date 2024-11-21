@@ -60,11 +60,18 @@ sam local start-api --docker-network mi-boda-network
 
 ### Test API Endpoint
 
+With server running
 ```
 curl -X POST http://localhost:3000/submit \
   -H "Content-Type: application/json" \
   -d '{"id": "123", "name": "John Doe", "email": "john.doe@example.com"}'
-``` 
+```
+
+
+Or sam local invoke
+```
+sam local invoke SubmitFormFunction -e events/event.json --env-vars env.json --docker-network mi-boda-network
+```
 
 ### To scan the FormData table exist items
 
