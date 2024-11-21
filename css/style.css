@@ -273,7 +273,6 @@ img {
   height: 6rem;
   text-align: center;
   border-radius: 2.5rem;
-  padding: 2rem;
   background-color: var(--color-4);
   display: flex;
   justify-content: center;
@@ -669,7 +668,7 @@ img {
 }
 
 .regalos__info span {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: var(--fuente-secundaria);
   background-color: var(--color-3);
   border-radius: 1.6rem;
@@ -685,8 +684,8 @@ img {
 }
 
 .transfer img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   margin-right: 2rem;
 }
 
