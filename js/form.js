@@ -4,7 +4,6 @@ const form = document.querySelector("#formulario_asistencia");
 const confirmDialogID = document.querySelector("#confirmDialogID");
 const modal = document.querySelector("#modal");
 
-// Add click outside listener
 modal.addEventListener("click", (e) => {
   const modalDimensions = modal.getBoundingClientRect();
   if (
