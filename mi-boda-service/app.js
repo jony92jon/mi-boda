@@ -79,13 +79,13 @@ exports.submitForm = async (event) => {
       try {
         await transporter.sendMail({
           from: {
-            name: "Wedding RSVP",
+            name: "Boda de Jonatan y Rosa",
             address: "ismaelbakkalichairi@gmail.com",
           },
           to: data.email,
-          subject: "Thanks for your RSVP!",
+          subject: "¡Gracias por confirmar tu asistencia!",
           html: emailHtml,
-          text: `Thank you for your RSVP, ${data.name}! We're excited to have you at our wedding celebration.`,
+          text: `¡Gracias por confirmar tu asistencia, ${data.name}! Nos hace mucha ilusión que nos acompañes en este día tan especial.`,
         });
       } catch (emailError) {
         console.error("Error sending email:", emailError);
