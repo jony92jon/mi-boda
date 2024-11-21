@@ -1,19 +1,23 @@
-const confirmDialogID = document.querySelector("#confirmDialogID");
-const closeDialogID = document.querySelector("#closeDialogID");
-const modal = document.querySelector("#modal");
-
-function openModal() {
-  modal.showModal();
-}
-
-function closeModal() {
-  modal.close();
-}
-
-confirmDialogID.addEventListener("click", openModal);
-closeDialogID.addEventListener("click", closeModal);
+import { openModal, closeModal } from "./modal.js";
 
 const form = document.querySelector("#formulario_asistencia");
+const confirmDialogID = document.querySelector("#confirmDialogID");
+const modal = document.querySelector("#modal");
+
+// Add click outside listener
+modal.addEventListener("click", (e) => {
+  const modalDimensions = modal.getBoundingClientRect();
+  if (
+    e.clientX < modalDimensions.left ||
+    e.clientX > modalDimensions.right ||
+    e.clientY < modalDimensions.top ||
+    e.clientY > modalDimensions.bottom
+  ) {
+    closeModal();
+  }
+});
+
+confirmDialogID.addEventListener("click", openModal);
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
