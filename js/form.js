@@ -22,12 +22,6 @@ form.addEventListener("submit", async (e) => {
 
   console.log(formDataObject, "formDataObject");
 
-  if (formDataObject.asistencia === "no") {
-    closeModal();
-    window.location.href = "no_going.html";
-    return;
-  }
-
   const API_BASE_URL =
     false === "development"
       ? "http://localhost:3000/submit"
@@ -43,9 +37,13 @@ form.addEventListener("submit", async (e) => {
     });
 
     if (response.ok) {
+      if (formDataObject.asistencia === "no") {
+        window.location.href = "no_going.html";
+      } else {
+        window.location.href = "success.html";
+      }
       form.reset();
       closeModal();
-      window.location.href = "success.html";
     } else {
       throw new Error("Error al enviar el formulario");
     }
