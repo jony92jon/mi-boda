@@ -68,9 +68,14 @@ curl -X POST http://localhost:3000/submit \
 ```
 
 
-Or sam local invoke
+Or sam local invoke a person who assist
 ```
 sam local invoke SubmitFormFunction -e events/event.json --env-vars env.json --docker-network mi-boda-network
+```
+
+Or sam local invoke a person who not assist
+```
+sam local invoke SubmitFormFunction -e events/event_not_going.json --env-vars env.json --docker-network mi-boda-network
 ```
 
 ### To scan the FormData table exist items
