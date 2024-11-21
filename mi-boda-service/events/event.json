@@ -1,0 +1,7 @@
+{
+  "body": "{\"name\":\"Test User\",\"email\":\"ismaelbakkalichairi@gmail.com\"}",
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}

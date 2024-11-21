@@ -1,5 +1,11 @@
 const AWS = require("aws-sdk");
 const { v4: uuidv4 } = require("uuid");
+const nodemailer = require("nodemailer");
+const ConfirmationEmail = require("./emails/confirmation.js");
+
+if (process.env.AWS_SAM_LOCAL === "true") {
+  require("dotenv").config();
+}
 
 const isLocal = process.env.AWS_SAM_LOCAL === "true";
 
@@ -7,10 +13,28 @@ const dynamoDBConfig = {
   region: "eu-central-1",
   ...(isLocal && {
     endpoint: "http://dynamodb-local:8000",
+    //endpoint: "http://localhost:8000",
+    sslEnabled: false,
   }),
 };
 
 const dynamoDB = new AWS.DynamoDB.DocumentClient(dynamoDBConfig);
+
+// Add these environment variables to your Lambda function
+const SMTP_HOST = process.env.SMTP_HOST;
+const SMTP_PORT = process.env.SMTP_PORT;
+const SMTP_USER = process.env.SMTP_USER;
+const SMTP_PASS = process.env.SMTP_PASS;
+
+const transporter = nodemailer.createTransport({
+  host: SMTP_HOST,
+  port: SMTP_PORT,
+  secure: true,
+  auth: {
+    user: SMTP_USER,
+    pass: SMTP_PASS,
+  },
+});
 
 exports.submitForm = async (event) => {
   const headers = {
@@ -46,6 +70,23 @@ exports.submitForm = async (event) => {
         Item: item,
       })
       .promise();
+
+    // If email is provided, send confirmation
+    if (data.email) {
+      const emailHtml = ConfirmationEmail({ name: data.name });
+      console.log("Email template generated");
+
+      await transporter.sendMail({
+        from: {
+          name: "Wedding RSVP",
+          address: "ismaelbakkalichairi@gmail.com",
+        },
+        to: data.email,
+        subject: "Thanks for your RSVP!",
+        html: emailHtml,
+        text: `Thank you for your RSVP, ${data.name}! We're excited to have you at our wedding celebration.`,
+      });
+    }
 
     return {
       statusCode: 200,
