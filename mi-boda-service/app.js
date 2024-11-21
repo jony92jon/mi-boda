@@ -4,7 +4,11 @@ const nodemailer = require("nodemailer");
 const ConfirmationEmail = require("./emails/confirmation.js");
 
 if (process.env.AWS_SAM_LOCAL === "true") {
-  require("dotenv").config();
+  try {
+    require("dotenv").config();
+  } catch (error) {
+    console.warn("dotenv not found, skipping...");
+  }
 }
 
 const isLocal = process.env.AWS_SAM_LOCAL === "true";

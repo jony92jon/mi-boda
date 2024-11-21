@@ -17,20 +17,6 @@ const ConfirmationEmail = ({ name }) => {
     eventDetails.details
   )}&location=${encodeURIComponent(eventDetails.location)}`;
 
-  const appleCalendarLink =
-    encodeURI(`data:text/calendar;charset=utf8,BEGIN:VCALENDAR
-VERSION:2.0
-BEGIN:VEVENT
-DTSTART:${eventDetails.startDate}
-DTEND:${eventDetails.endDate}
-SUMMARY:${eventDetails.text}
-DESCRIPTION:${eventDetails.details}
-LOCATION:${eventDetails.location}
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENT
-END:VCALENDAR`);
-
   return `
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html>
@@ -92,24 +78,7 @@ END:VCALENDAR`);
                                  margin-bottom: 10px;
                                "
                             >
-                              📅 Google Calendar
-                            </a>
-                          </td>
-                          <td style="padding: 0 10px;">
-                            <a href="${appleCalendarLink}" 
-                               download="Boda_Jonatan_y_Rosa.ics"
-                               style="
-                                 background-color: #1c1c1c;
-                                 color: #ffffff;
-                                 padding: 12px 24px;
-                                 text-decoration: none;
-                                 border-radius: 4px;
-                                 font-size: 16px;
-                                 display: inline-block;
-                                 margin-bottom: 10px;
-                               "
-                            >
-                              📱 Apple Calendar
+                              📅 Añadir a Google Calendar
                             </a>
                           </td>
                         </tr>
