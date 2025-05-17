@@ -678,24 +678,6 @@ img {
   margin-right: 1rem;
 }
 
-.transfer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.transfer img {
-  width: 5rem;
-  height: 5rem;
-  margin-bottom: 2rem;
-}
-
-.tranfer-copiar {
-  display: flex;
-  justify-content: space-around;
-}
-
 .tranfer-copiar button {
   cursor: pointer;
 }
@@ -1253,4 +1235,64 @@ section h2 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   box-shadow: none;
+}
+
+/* Nueva Seccion*/
+
+.regalos {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.regalos_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 30px -3px rgba(214, 210, 214, 1);
+  -moz-box-shadow: 0px 0px 30px -3px rgba(214, 210, 214, 1);
+  box-shadow: 0px 0px 30px -3px rgba(214, 210, 214, 1);
+  padding: 3rem;
+  border-radius: 1.7rem;
+}
+
+.regalos_info {
+  text-align: center;
+}
+
+.regalos_info .regalos_info--titulo {
+  font-family: var(--fuente-secundaria);
+  color: #3b1509;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.regalos_info .regalos_info--parrafo {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: var(--fuente-secundaria);
+  margin-bottom: 2rem;
+}
+
+.regalos_info .regalos_info--numero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: var(--fuente-secundaria);
+  background-color: var(--color-3);
+  border-radius: 1.6rem;
+  padding: 0.7rem;
+  color: var(--blanco);
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.regalos_info .regalos_info--caja .regalos_info--numero {
+  margin-right: 0.5rem;
 }
